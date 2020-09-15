@@ -10,6 +10,7 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+=begin store validation test
 puts "Give me a store name: "
 store_name = $stdin.gets.chomp
 
@@ -17,3 +18,13 @@ new_store = Store.create(name: store_name)
 new_store.errors.messages.each do |msg|
   puts msg
 end
+=end
+
+=begin employee validation test
+puts "Your first name: "
+name = $stdin.gets.chomp
+
+@store1.employees.create(first_name: name).errors.messages.each do |msg|
+  puts msg
+end
+=end
