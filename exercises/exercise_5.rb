@@ -8,3 +8,8 @@ puts "Exercise 5"
 puts "----------"
 
 # Your code goes here ...
+
+puts Store.sum("annual_revenue")
+puts Store.average("annual_revenue")
+puts Store.where('annual_revenue > 1000000').count
+# puts Store.where('annual_revenue > ?', 1000000).size size is suppose to return size of the array without running a query
